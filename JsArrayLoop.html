@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    const colors = ["Green", "Red", "Black", "Yellow", "Orange"];
+    
+    for (var i = 0; i < colors.length; i++) 
+    {
+      console.log(colors[i]);
+    }
+
+    const numbers = [1, 2, 3, 4];
+
+    function sumArray(numbers)
+    {
+      let sum = 0;
+      for (let x of numbers)
+        sum += x;
+      return sum;
+    }
+    console.log(sumArray(numbers));
+
+    function multiNum(miltiNum) 
+    {
+      return miltiNum.map(x => x * 2);
+    }
+    console.log(multiNum([2, 4, 6, 8]));
+
+  </script>
+</body>
+</html>
